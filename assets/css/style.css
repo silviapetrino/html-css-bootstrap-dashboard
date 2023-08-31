@@ -55,19 +55,21 @@ ul {
 
   /* main section  */
 
+
   main {
     height: 100vh;
     width: 100%;
+    padding-top: 70px;
   }
   
   main aside {
-    width: 100px;
+    width: 80px;
     background-image: url(../img/sidebar-bg.png);
     background-color: var(--dark-blue);
   }
   
   main .container_ {
-    width: calc(100% - 100px);
+    width: calc(100% - 80px);
     overflow: auto;
   }
 
@@ -85,6 +87,9 @@ ul {
 
 /* --media queries-- */
 @media all and (min-width: 768px) {
+  main {
+    padding-top: 70px;
+  }
   main aside {
    width: 50px;
   }
@@ -95,6 +100,11 @@ ul {
  }
  
  @media all and (min-width: 992px) {
+  
+  main {
+    padding-top: 65px;
+  }
+
   main aside {
    width: 145px;
   }
