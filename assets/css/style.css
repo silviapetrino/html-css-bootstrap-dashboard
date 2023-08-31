@@ -56,10 +56,11 @@ ul {
   /* main section  */
 
 
+
   main {
     height: 100vh;
     width: 100%;
-    padding-top: 70px;
+    padding-top: 80px;
   }
   
   main aside {
@@ -87,9 +88,7 @@ ul {
 
 /* --media queries-- */
 @media all and (min-width: 768px) {
-  main {
-    padding-top: 70px;
-  }
+  
   main aside {
    width: 50px;
   }
@@ -100,9 +99,9 @@ ul {
  }
  
  @media all and (min-width: 992px) {
-  
+
   main {
-    padding-top: 65px;
+    padding-top: 70px;
   }
 
   main aside {
