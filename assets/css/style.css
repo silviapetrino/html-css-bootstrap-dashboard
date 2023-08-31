@@ -1,3 +1,39 @@
 body {
   font-family: font-family: 'Roboto', sans-serif;
 }
+
+:root {
+  --blue: #1B72E8;
+  --dark-blue: #0C253B;
+}
+
+/* debug class */
+
+/* [class^="col"] {
+background-color: rgba (0 0 0 0.)2;
+border: 1px solid black;
+} */
+
+.debug {
+  border: 1px solid black;
+  background-color: rgba(230, 176, 134, 0.2);
+}
+
+/* /debug class */
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+main aside {
+  width: 145px;
+}
+
+
+main .container_ {
+  width: calc(100% - 145px);
+  overflow: auto;
+}
+
+
