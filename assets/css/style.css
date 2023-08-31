@@ -5,14 +5,10 @@ body {
 :root {
   --blue: #1B72E8;
   --dark-blue: #0C253B;
+  --grey: #E5E5E5;
+  --icon-gray: #5B5858;
 }
 
-/* debug class */
-
-/* [class^="col"] {
-background-color: rgba (0 0 0 0.)2;
-border: 1px solid black;
-} */
 
 .debug {
   border: 1px solid black;
@@ -21,19 +17,65 @@ border: 1px solid black;
 
 /* /debug class */
 
+/* utilities */
+.bg_blue {
+  background-color: var(--blue);
+}
+
 main {
   height: 100vh;
   width: 100%;
 }
 
 main aside {
-  width: 145px;
+  width: 70px;
 }
-
 
 main .container_ {
-  width: calc(100% - 145px);
+  width: calc(100% - 70px);
   overflow: auto;
 }
+  /* header navbar */
+.input_sp {
+  background-color: var(--grey);
+  font-size: .8rem;
+}
+
+.icon.bell:hover {
+  color: orange;
+}
+
+.icon {
+  color: var(--icon-gray)
+}
+
+.logo-desktop {
+  width: 150px;
+}
+
+  /* header navbar */
 
 
+
+
+/* --media queries-- */
+@media all and (min-width: 768px) {
+  main aside {
+   width: 50px;
+  }
+  main .container_ {
+   width: calc(100% - 50px);
+   overflow: auto;
+ }
+ }
+ 
+ @media all and (min-width: 1100px) {
+  main aside {
+   width: 145px;
+  }
+  main .container_ {
+   width: calc(100% - 145px);
+   overflow: auto;
+ }
+ 
+ }
