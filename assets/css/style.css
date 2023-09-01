@@ -43,7 +43,19 @@ ul {
 }
 
 .main-size {
-  font-size: .9rem;
+  font-size: .7rem;
+}
+
+.no_bold {
+  font-weight:400;
+}
+
+.t-size {
+  width: 100px;
+}
+
+.no_wrap {
+  flex-wrap: nowrap;
 }
 
 
