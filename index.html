@@ -18,13 +18,7 @@
 </head>
 <body>
 
-
-  <!-- /* header navbar */ -->
-  <!-- /* //header navbar */ -->
-  
-  
-  <!-- MAIN section  -->
-  
+    <!-- header navbar -->
   
   <header class="fixed-top">
       
@@ -91,9 +85,14 @@
       </div>
     </div>
   </header>
+
+  <!-- //header navbar -->
+         
+     <!-- Main section  -->
+
   <main class="d-flex">
      
-      <!-- aside  -->
+      <!-- aside (inside main) -->
   
     <aside class="d-flex flex-column text-white px-2 py-3">
       <div class="col text-center">
@@ -141,7 +140,8 @@
       </div>
     </aside>
 
-      <!-- //aside  -->
+      <!-- /aside (inside main) -->
+
     <div class="container_">
       <div class="container-fluid">
 
@@ -150,11 +150,12 @@
         <div class="row bg_blue flex-column flex-md-row text-white align-items-center py-3">
 
           <div class="col order-md-1 py-2 py-md-1 d-lg-flex justify-content-end align-items-center me-2">
+
             <span class="main-size pe-2">Nuovo studente</span>
             <button type="button" class="btn border-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >
               <i class="text-white fa-solid fa-plus"></i>
             </button>
-
+                 <!-- offcanva  -->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
               <div class="offcanvas-header">
                 <span id="offcanvasRightLabel">Inserisci un nuovo stedente</span>
@@ -166,87 +167,94 @@
 
                 <form class="main-size">
 
-
+                <div class="container">
                   <div class="row row-cols-1">
-       <!-- name  -->
-                    <div class="col col-md-6">
-                      <div class="form-group">
-                        <label class="py-1" for="name">Nome</label>
-                        <input type="text" class="form-control main-size" id="name" aria-describedby="emailHelp">
-                      </div>
-                    </div>
-     <!-- surname -->
-                    <div class="col col-md-6">
-                      <div class="form-group">
-                        <label class="py-1" for="name">Cognome</label>
-                        <input type="text" class="form-control main-size" id="surname" aria-describedby="emailHelp">
-                      </div>
-                    </div>
-    <!-- email -->
-                    <div class="col col-md-6">
-                      <label class="py-1" for="email">Indirizzo email</label>
-                      <div class="input-group flex-nowrap">
-                        <span class="input-group-text main-size" id="addon-wrapping">@</span>
-                        <input type="email" class="py-1 form-control" aria-label="email" aria-describedby="addon-wrapping">
-                      </div>
-                     
-                    </div>
-    <!-- password -->
-                    <div class="col col-md-6">
-                      <div class="form-group">
-                        <label class="py-1" for="password">Password</label>
-                        <input type="password" class="form-control main-size" id="password" aria-describedby="emailHelp">
-                      </div>
-                    </div>
-    <!-- address -->
-                    <div class="col">
-                      <div class="form-group">
-                        <label class="py-1" for="address">Indirizzo</label>
-                        <input type="text" class="form-control main-size" id="address" aria-describedby="emailHelp">
-                      </div>
-                    </div>
-    <!-- City -->
-                    <div class="col col-md-6">
-                      <div class="form-group">
-                        <label class="py-1" for="name">Città</label>
-                        <input type="text" class="form-control main-size" id="city" aria-describedby="emailHelp">
-                      </div>
-                    </div>
-    <!-- State -->
-                    <div class="col col-md-4">
-                      <label class="py-1" for="name">Stato</label>
-                      <select class="main-size form-select form-select-sm" aria-label=".form-select-sm example">
-                        <option selected>scegli</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-    <!-- Cap -->
-                    <div class="col col-md-2">
-                      <div class="form-group">
-                        <label class="py-1" for="cap">Cap</label>
-                        <input type="text" class="form-control main-size" id="cap" aria-describedby="emailHelp">
-                      </div>
-                    </div>
-    <!-- photo -->
-                    <div class="col">
-                      <label class="py-1" for="file">Foto</label>
-                      <div class="input-group input-group-sm mb-3 main-size">
-    
-                        <input type="file" class="form-control main-size" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-                      </div>
-                    </div>
-    <!-- buttons -->
-                    <div class="col">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="px-1 form-check-label" for="flexCheckDefault">
-                        <span>Seleziona per proseguire</span>
-                      </label>
-                    </div>
-          
-          
+                    <!-- name  -->
+                           <div class="col col-md-6">
+                             <div class="form-group">
+                               <label class="py-1" for="name">Nome</label>
+                               <input type="text" class="form-control main-size" id="name" aria-describedby="emailHelp">
+                             </div>
+                           </div>
+                    <!-- surname -->
+                           <div class="col col-md-6">
+                             <div class="form-group">
+                               <label class="py-1" for="name">Cognome</label>
+                               <input type="text" class="form-control main-size" id="surname" aria-describedby="emailHelp">
+                             </div>
+                           </div>
+                   <!-- email -->
+                           <div class="col col-md-6">
+                             <label class="py-1" for="email">Indirizzo email</label>
+                             <div class="input-group flex-nowrap">
+                               <span class="input-group-text main-size" id="addon-wrapping">@</span>
+                               <input type="email" class="py-1 form-control" aria-label="email" aria-describedby="addon-wrapping">
+                             </div>
+                            
+                           </div>
+                    <!-- password -->
+                           <div class="col col-md-6">
+                             <div class="form-group">
+                               <label class="py-1" for="password">Password</label>
+                               <input type="password" class="form-control main-size" id="password" aria-describedby="emailHelp">
+                             </div>
+                           </div>
+                   <!-- address -->
+                           <div class="col">
+                             <div class="form-group">
+                               <label class="py-1" for="address">Indirizzo</label>
+                               <input type="text" class="form-control main-size" id="address" aria-describedby="emailHelp">
+                             </div>
+                           </div>
+                  <!-- City -->
+                           <div class="col col-md-6">
+                             <div class="form-group">
+                               <label class="py-1" for="name">Città</label>
+                               <input type="text" class="form-control main-size" id="city" aria-describedby="emailHelp">
+                             </div>
+                           </div>
+                 <!-- State -->
+                           <div class="col col-md-4">
+                             <label class="py-1" for="name">Stato</label>
+                             <select class="main-size form-select form-select-sm" aria-label=".form-select-sm example">
+                               <option selected>scegli</option>
+                               <option value="1">One</option>
+                               <option value="2">Two</option>
+                               <option value="3">Three</option>
+                             </select>
+                           </div>
+                  <!-- Cap -->
+                           <div class="col col-md-2">
+                             <div class="form-group">
+                               <label class="py-1" for="cap">Cap</label>
+                               <input type="text" class="form-control main-size" id="cap" aria-describedby="emailHelp">
+                             </div>
+                           </div>
+                 <!-- photo -->
+                           <div class="col">
+                             <label class="py-1" for="file">Foto</label>
+                             <div class="input-group input-group-sm mb-3 main-size">
+           
+                               <input type="file" class="form-control main-size" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                             </div>
+                           </div>
+                <!-- buttons -->
+                           <div class="col">
+                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                             <label class="px-1 form-check-label" for="flexCheckDefault">
+                               <span>Seleziona per proseguire</span>
+                             </label>
+                             <div class="py-2">
+                               <button class="btn btn-primary main-size" type="submit">Salva</button>
+                               <input class="btn btn-warning main-size" type="reset" value="Reset">
+                             </div>
+                             
+                           </div>
+                 
+                 
+                         </div>
                 </div>
+                
 
 
 
@@ -254,9 +262,9 @@
                 </form>
 
                 
-
               </div>
-
+              
+              <!-- /offcanva  -->
 
             </div>
           
@@ -342,14 +350,14 @@
 
                 <div class="buttons_ d-flex gap-1 ">
                   <button type="button" class="btn btn-outline-secondary ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewbox="0 0 16 16">
                     <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
                     </svg>
                     <span class="visually-hidden">Button</span>
                   </button>
 
                     <button type="button" class="btn btn-outline-secondary ">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewbox="0 0 16 16">
                       <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"></path>
                     </svg>
                       <span class="visually-hidden">Button</span>
@@ -374,14 +382,14 @@
 
                 <div class="buttons_ d-flex gap-1 ">
                   <button type="button" class="btn btn-outline-secondary ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewbox="0 0 16 16">
                     <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
                     </svg>
                     <span class="visually-hidden">Button</span>
                   </button>
 
                     <button type="button" class="btn btn-outline-secondary ">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewbox="0 0 16 16">
                       <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"></path>
                     </svg>
                       <span class="visually-hidden">Button</span>
@@ -406,14 +414,14 @@
 
                 <div class="buttons_ d-flex gap-1 ">
                   <button type="button" class="btn btn-outline-secondary ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewbox="0 0 16 16">
                     <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
                     </svg>
                     <span class="visually-hidden">Button</span>
                   </button>
 
                     <button type="button" class="btn btn-outline-secondary ">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewbox="0 0 16 16">
                       <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"></path>
                     </svg>
                       <span class="visually-hidden">Button</span>
@@ -438,14 +446,14 @@
 
                 <div class="buttons_ d-flex gap-1 ">
                   <button type="button" class="btn btn-outline-secondary ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewbox="0 0 16 16">
                     <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
                     </svg>
                     <span class="visually-hidden">Button</span>
                   </button>
 
                     <button type="button" class="btn btn-outline-secondary ">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewbox="0 0 16 16">
                       <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"></path>
                     </svg>
                       <span class="visually-hidden">Button</span>
@@ -470,14 +478,14 @@
 
                 <div class="buttons_ d-flex gap-1 ">
                   <button type="button" class="btn btn-outline-secondary ">
-                    <svg xmlns="http://www.w3.org/2000/svg" widtd="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" widtd="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewbox="0 0 16 16">
                     <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
                     </svg>
                     <span class="visually-hidden">Button</span>
                   </button>
 
                     <button type="button" class="btn btn-outline-secondary ">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewbox="0 0 16 16">
                       <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"></path>
                     </svg>
                       <span class="visually-hidden">Button</span>
@@ -502,14 +510,14 @@
 
                 <div class="buttons_ d-flex gap-1 ">
                   <button type="button" class="btn btn-outline-secondary ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewbox="0 0 16 16">
                     <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
                     </svg>
                     <span class="visually-hidden">Button</span>
                   </button>
 
                     <button type="button" class="btn btn-outline-secondary ">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewbox="0 0 16 16">
                       <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"></path>
                     </svg>
                       <span class="visually-hidden">Button</span>
@@ -534,14 +542,14 @@
 
                 <div class="buttons_ d-flex gap-1 ">
                   <button type="button" class="btn btn-outline-secondary ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewbox="0 0 16 16">
                     <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
                     </svg>
                     <span class="visually-hidden">Button</span>
                   </button>
 
                     <button type="button" class="btn btn-outline-secondary ">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewbox="0 0 16 16">
                       <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"></path>
                     </svg>
                       <span class="visually-hidden">Button</span>
@@ -566,14 +574,14 @@
 
                 <div class="buttons_ d-flex gap-1 ">
                   <button type="button" class="btn btn-outline-secondary ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-fill" viewbox="0 0 16 16">
                     <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
                     </svg>
                     <span class="visually-hidden">Button</span>
                   </button>
 
                     <button type="button" class="btn btn-outline-secondary ">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill" viewbox="0 0 16 16">
                       <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"></path>
                     </svg>
                       <span class="visually-hidden">Button</span>
@@ -655,24 +663,24 @@
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" id="check-1">
+                        <label class="form-check-label" for="check-1">
                           Kickoff nuove classi
                         </label>
                       </div>
                     </li>
                     <li class="list-group-item">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" id="check-2">
+                        <label class="form-check-label" for="check-2">
                           Lezione su Bootstrap 5 in classe #75
                         </label>
                       </div>
                     </li>
                     <li class="list-group-item">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" id="check-3">
+                        <label class="form-check-label" for="check-3">
                           Controllare username Github studenti
                         </label>
                       </div>
@@ -735,10 +743,9 @@
       </div>
     </div>
 
-
   </main>
 
-   <!-- //MAIN section  -->
+   <!-- //Main section  -->
   
 </body>
 </html>
