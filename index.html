@@ -147,13 +147,82 @@
 
         <!-- ----boolean head section  -->
        
-        <div class=" row bg_blue flex-column flex-md-row text-white align-items-center py-3">
+        <div class="row bg_blue flex-column flex-md-row text-white align-items-center py-3">
 
-          <div class="col order-md-1 py-2 py-md-1 text-lg-end ">
+          <div class="col order-md-1 py-2 py-md-1 d-lg-flex justify-content-end align-items-center me-2">
             <span class="main-size pe-2">Nuovo studente</span>
-            <button type="button" class="btn border-white">
+            <button type="button" class="btn border-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" >
               <i class="text-white fa-solid fa-plus"></i>
             </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <span id="offcanvasRightLabel">Inserisci un nuovo stedente</span>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+
+          
+              <div class="offcanvas-body">
+
+                <form class="main-size">
+
+
+                  <div class="row row-cols-1">
+       <!-- name  -->
+                    <div class="col col-md-6">
+                      <div class="form-group">
+                        <label class="py-1" for="name">Nome</label>
+                        <input type="text" class="form-control main-size" id="name" aria-describedby="emailHelp">
+                      </div>
+                    </div>
+     <!-- surname -->
+                    <div class="col col-md-6">
+                      <div class="form-group">
+                        <label class="py-1" for="name">Cognome</label>
+                        <input type="text" class="form-control main-size" id="surname" aria-describedby="emailHelp">
+                      </div>
+                    </div>
+    <!-- email -->
+                    <div class="col col-md-6">
+                      <label class="py-1" for="name">Indirizzo email</label>
+                      <div class="input-group flex-nowrap">
+                        <span class="input-group-text main-size" id="addon-wrapping">@</span>
+                        <input type="email" class="py-1 form-control" aria-label="email" aria-describedby="addon-wrapping">
+                      </div>
+                     
+                    </div>
+    <!-- password -->
+                    <div class="col col-md-6 debug">password</div>
+    <!-- address -->
+                    <div class="col debug">indirizzo</div>
+    <!-- City -->
+                    <div class="col col-md-6 debug">città</div>
+    <!-- State -->
+                    <div class="col col-md-4 debug">stato</div>
+    <!-- Cap -->
+                    <div class="col col-md-2 debug">cap</div>
+    <!-- photo -->
+                    <div class="col debug">foto</div>
+    <!-- buttons -->
+                    <div class="col debug">bottoni</div>
+          
+          
+                </div>
+
+
+
+
+                </form>
+
+                
+
+              </div>
+
+
+            </div>
+          
+
+
           </div>
 
           <div class="col py-2">
@@ -576,7 +645,7 @@
             </div>
 
             <!-- /todo  -->
-            <!-- utenti attivi  -->
+            <!-- utenti attivi stats  -->
 
             <div class="card my-3">
               
