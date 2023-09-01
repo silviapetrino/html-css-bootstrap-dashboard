@@ -35,7 +35,7 @@ ul {
 
 .blue-bedge {
   background-color: var(--blue-bedge);
-  padding: 4px;
+  padding: 5px;
 }
 
 .blue-bedge:hover {
@@ -51,7 +51,7 @@ ul {
 }
 
 .t-size {
-  width: 100px;
+  width: 120px;
 }
 
 .no_wrap {
