@@ -8,6 +8,7 @@ ul {
 
 :root {
   --blue: #1B72E8;
+  --blue-bedge: #165BBA;
   --dark-blue: #0C253B;
   --gray: #E5E5E5;
   --icon-gray: #5B5858;
@@ -23,8 +24,26 @@ ul {
 /* /debug class */
 
 /* utilities */
+.point {
+  cursor: pointer;
+}
+
 .bg_blue {
   background-color: var(--blue);
+}
+
+
+.blue-bedge {
+  background-color: var(--blue-bedge);
+  padding: 4px;
+}
+
+.blue-bedge:hover {
+  background-color: #0f3f83;
+}
+
+.main-size {
+  font-size: .9rem;
 }
 
 
@@ -79,7 +98,6 @@ ul {
   .nav-item_sp:hover {
     background-color: var(--hover-nav-gray);
   }
-
 
      /* //aside  */
 
