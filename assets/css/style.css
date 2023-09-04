@@ -15,7 +15,6 @@ ul {
   --hover-nav-gray: #848F98;
 }
 
-
 .debug {
   border: 1px solid black;
   background-color: rgba(230, 176, 134, 0.2);
@@ -63,7 +62,7 @@ ul {
 
 
 
-  /* header navbar */
+/* header navbar */
 .input_sp {
   background-color: var(--gray);
   font-size: .8rem;
@@ -82,11 +81,8 @@ ul {
 }
 
   /* header navbar */
-  
 
   /* main section  */
-
-
 
   main {
     height: 100vh;
